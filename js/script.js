@@ -1,13 +1,5 @@
 jQuery(document).ready(function($) {
 
-    $('.collapse').on('shown.bs.collapse', function () {
-        $(this).prev().addClass('active-acc');
-    });
-
-    $('.collapse').on('hidden.bs.collapse', function () {
-        $(this).prev().removeClass('active-acc');
-    });
-
 	 $('img').addClass('img-fluid');
 
 	 $('.home-slider').slick({

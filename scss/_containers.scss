@@ -1,6 +1,6 @@
 /* New CSS added by me on 8/2/18 */
 .main-content {
-  padding: 4rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
 }
 
 .navbar {
@@ -62,4 +62,41 @@
   ul {
     padding-left: 0;
   }
+}
+
+// Accordion
+.card-header {
+  background-color: #ffffff;
+
+  .products-button {
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-link {
+    color: #3d91cf;
+
+    &:hover {
+      color: #333333;
+      text-decoration: none;
+    }
+
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+
+// Product Pages
+.sidebar-grey-box {
+    padding: 25px 20px 120px;
+
+    img {
+      padding-top: 20px;
+    }
+
+    p {
+      color: #999999;
+    }
 }

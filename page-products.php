@@ -56,37 +56,39 @@ Template name: Products
                                       <h2 class="faq-title"><?php the_sub_field('section_title'); ?></h2>
                                   <?php endif; ?>
 
-                                        <!-- <div id="<?php echo $name; ?>" class="accordion"> -->
+
 
                                             <?php if( have_rows('product') ): ?>
+                                              <div class="accordion" id="accordionExample">
+
                                                 <?php while( have_rows('product') ): the_row(); ?>
 
-                                                    <div class="accordion">
+                                                    <!-- <div class="accordion"> -->
                                                       <div class="card">
 
                                                         <div class="card-header accordion-heading" id="<?php the_sub_field('accordion_name'); ?>">
                                                           <h5 class="mb-0">
-                                                            
-                                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#<?php echo $name; ?>" aria-expanded="true" aria-controls="<?php echo $name; ?>">
+
+                                                            <button class="products-button btn btn-link" type="button" data-toggle="collapse" data-target="#<?php the_sub_field('accordion_id'); ?>" aria-expanded="true" aria-controls="<?php the_sub_field('accordion_id'); ?>">
                                                               <?php the_sub_field('product_title'); ?>
                                                             </button>
 
                                                           </h5>
                                                         </div>
 
-                                                        <div id="<?php echo $name; ?>" class="collapse" aria-labelledby="<?php the_sub_field('accordion_name'); ?>" data-parent="#accordionExample">
+                                                        <div id="<?php the_sub_field('accordion_id'); ?>" class="collapse" aria-labelledby="<?php the_sub_field('accordion_name'); ?>" data-parent="#accordionExample">
                                                           <div class="card-body">
                                                             <?php the_sub_field('product_editor'); ?>
                                                           </div>
                                                         </div>
 
                                                       </div> <!-- card close -->
-                                                    </div> <!-- accordion close -->
+                                                    <!-- </div>  -->
+                                                    <!-- accordion close -->
 
-                                                <?php endwhile; ?>
+                                                <?php  endwhile; ?>
+                                                </div>
                                             <?php endif; ?>
-
-                                        <!-- </div> -->
 
                                 <?php endwhile; ?>
                             <?php endif; ?>

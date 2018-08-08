@@ -70,7 +70,7 @@ Template name: Products
                                                           <h5 class="mb-0">
 
                                                             <button class="products-button btn btn-link" type="button" data-toggle="collapse" data-target="#<?php the_sub_field('accordion_id'); ?>" aria-expanded="true" aria-controls="<?php the_sub_field('accordion_id'); ?>">
-                                                              <?php the_sub_field('product_title'); ?>
+                                                              <i class="fa fa-plus-circle" aria-hidden="true"></i> <?php the_sub_field('product_title'); ?>
                                                             </button>
 
                                                           </h5>

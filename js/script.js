@@ -1,16 +1,29 @@
 jQuery(document).ready(function($) {
 
-	 $('img').addClass('img-fluid');
+  // add bootstrap class img-fluid to all images to make them responsive
+  $('img').addClass('img-fluid');
+  // This is the function for slick slider on the page-home.php
+  $('.home-slider').slick({
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    dots: true,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 10000
+  });
 
-	 $('.home-slider').slick({
-		 slidesToShow: 1,
-		 adaptiveHeight: true,
-		 dots: true,
-         fade: true,
-		 autoplay: true,
-         autoplaySpeed: 10000
-	 });
+  // click function to change font awesome plus symbol to minus symbol on the accordion sections
+  $('.products-button').click(function() {
 
+    $(this).find("i").toggleClass("fa-plus-circle fa-minus-circle");
+
+  });
+
+  $('.collapse').on('.collapse.show', function(){
+    $(this).parent().find(".fa-plus-circle").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+    }).on('hidden.bs.collapse', function(){
+    $(this).parent().find(".fa-minus-circle").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+  });
 
 	$('.menu-footer-menu-container ul').addClass('footer-navigate');
 

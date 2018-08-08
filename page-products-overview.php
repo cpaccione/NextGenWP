@@ -15,12 +15,11 @@ Template name: Product Overview
 
             <div class="container">
                 <div class="row show-grid">
-                    <div class="span12">
-                        <div class="row show-grid">
-                            <div id="left-sidebar" class="span3 sidebar">
-                                <br>
+                    <!-- <div class="span12"> -->
+                        <!-- <div class="row show-grid"> -->
+                            <div id="left-sidebar" class="col-md-3 sidebar">
                                 <div class="sidebar-baloon sidebar-grey-box">
-                                    <p><?php the_field('left_sidebar'); ?></p>
+                                    <?php the_field('left_sidebar'); ?>
 
                                     <?php
                                       $image = get_field('product_overview_image');
@@ -33,7 +32,7 @@ Template name: Product Overview
                                 </div>
                             </div>
 
-                            <div class="span9 main-column two-columns-left">
+                            <div class="col-md-9 main-column two-columns-left">
 
 	                            <br><?php the_title('<h2 class="faq-title">', '</h2>'); ?>
 	                            <div id="accordion1" class="accordion">
@@ -62,19 +61,20 @@ Template name: Product Overview
 
                             </div> <!-- end span9 -->
 
-                    </div>
-                </div>
+                    <!-- </div> -->
+                <!-- </div> -->
             </div>
             </div>
 
-            <div class="recent-tweets">
+            <!-- <div class="recent-tweets">
                 <div class="container">
                     <div class="row show-grid">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
+      </div>
 
-        <div class="about-us-spacer-100"></div>
+        <!-- <div class="about-us-spacer-100"></div> -->
 
 <?php get_footer(); ?>

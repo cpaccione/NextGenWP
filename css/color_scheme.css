@@ -23,15 +23,15 @@ a:hover {
 ---------------------------------------------------------------------- */
 .navbar .nav .open .dropdown-menu .active a {
     text-decoration: none;
-    color: white;
-    background-color: #0081C2;
+    color: #3e92d0;
+    /* background-color: #0081C2; */
     background-image: -moz-linear-gradient(top, #08C, #0077B3);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#0077B3));
     background-image: -webkit-linear-gradient(top, #08C, #0077B3);
     background-image: -o-linear-gradient(top, #08C, #0077B3);
     background-image: linear-gradient(to bottom, #08C, #0077B3);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
     border: none;
     background-image: none;
 }
@@ -39,9 +39,9 @@ a:hover {
 /* Text color of the active link in a drop down menu when you hover over it
 ---------------------------------------------------------------------- */
 .navbar .nav .open .dropdown-menu .active a:hover {
-    background-color: #0081C2;
+    /* background-color: #0081C2; */
     color: #ffffff;
-    background-image: none !important;    
+    background-image: none !important;
     filter: none;
 }
 
@@ -341,7 +341,7 @@ blockquote.blueb p {
     background-color: #0163ac;
 }
 /*Footer style 1*/
-.footer-wrapper {    
+.footer-wrapper {
     background: transparent url("../images/dark_tissue.png") top left repeat;
 }
 footer.footer-1 .footer-wrapper {

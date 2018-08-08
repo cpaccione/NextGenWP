@@ -1,4 +1,14 @@
 /* New CSS added by me on 8/2/18 */
+header, .navbar-wrapper {
+  @include respond-to(max-width, 1024px) {
+    display: none;
+  }
+}
+
+.navbar .nav > li .dropdown-menu {
+  min-width: 350px;
+}
+
 .main-content {
   padding: 2rem 0 2rem 0;
 }

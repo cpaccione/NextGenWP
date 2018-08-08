@@ -1499,7 +1499,7 @@ ul.icons {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0)
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover, .navbar .nav .active a > i, .navbar .nav .active a > i:hover {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     text-decoration: none;
 }
 .navbar .nav > li .dropdown-menu {
@@ -1670,7 +1670,9 @@ ul.icons {
 .navbar .nav .dropdown-menu li:hover a {
     border: none;
     padding-top: 8px;
-}
+    color: #3e92d0;
+    text-decoration: none;
+  }
 .navbar .in .nav li a {
     border: none;
     padding: 8px 10px 11px;

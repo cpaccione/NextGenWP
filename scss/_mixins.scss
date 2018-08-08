@@ -1,0 +1,5 @@
+@mixin respond-to($val, $query) {
+	@media ($val: $query) {
+		@content
+	}
+}

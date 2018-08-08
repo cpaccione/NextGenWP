@@ -34,7 +34,7 @@ Template name: Product Overview
 
                             <div class="col-md-9 main-column two-columns-left">
 
-	                            <br><?php the_title('<h2 class="faq-title">', '</h2>'); ?>
+	                            <?php the_title('<h2 class="faq-title">', '</h2>'); ?>
 	                            <div id="accordion1" class="accordion">
 		                            <ul><br>
 			                            <?php if( have_rows('overview_links') ): ?>
@@ -57,9 +57,7 @@ Template name: Product Overview
 		                            </ul>
 
 	                            </div>
-
-
-                            </div> <!-- end span9 -->
+                            </div> <!-- end col-md-9 -->
 
                     <!-- </div> -->
                 <!-- </div> -->

@@ -9,7 +9,15 @@ jQuery(document).ready(function($) {
     dots: true,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 10000
+    autoplaySpeed: 10000,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false
+      }
+    },
+    ]
   });
 
   // click function to change font awesome plus symbol to minus symbol on the accordion sections

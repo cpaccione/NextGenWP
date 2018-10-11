@@ -1,6 +1,6 @@
 /* New CSS added by me on 8/2/18 */
 header, .navbar-wrapper {
-  @include respond-to(max-width, 1024px) {
+  @include respond-to(max-width, 1199px) {
     display: none;
   }
 }
@@ -113,4 +113,30 @@ header, .navbar-wrapper {
     p {
       color: #999999;
     }
+}
+
+
+// home page 
+.social-media {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    margin-bottom: 0;
+
+    li {
+      display: inline;
+
+      a {
+        .fa {
+          color: #ffffff;
+          padding-right: .5rem;
+
+          &:hover {
+            color: #f6a9cf;
+          }
+        }
+      }
+    }    
+  }
 }

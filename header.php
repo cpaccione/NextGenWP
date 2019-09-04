@@ -49,6 +49,12 @@
                              ?>
 
                     </div>
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="https://www.facebook.com/nextgenlifelabs" target="_blank"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/nextgen-lifelabs-llc" target="_blank"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
